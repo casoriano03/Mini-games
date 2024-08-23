@@ -1,0 +1,56 @@
+body {
+    background-color: bisque;
+}
+#main {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-areas: 
+    "one two" 
+    "three four"
+    ;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: cadetblue;
+    
+}
+
+#box128A{
+    grid-area: one;
+}
+
+#box128B {
+    grid-area: two;
+}
+
+#box128D {
+    grid-area: three;
+}
+
+#box128E {
+    grid-area: four;
+}
+
+#heading {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* 128E */
+
+#innerDiv {
+display: grid;
+grid-template-columns: repeat(3, 100px);
+grid-template-rows: repeat(3, 100px);
+}
+
+.innerBox {
+    background-color: bisque;
+    border: 1px solid gray;
+}
+
+.active {
+    background-color: blueviolet;
+}
